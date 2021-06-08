@@ -1,6 +1,6 @@
 import * as types from './types';
 
-import tutorialService from '../services/tutorials.service';
+import tutorialService from './../services/tutorial.service.js';
 
 // types.TUTORIAL_CREATE
 export const createTutorial = (title, description) => async (dispatch) => {

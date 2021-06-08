@@ -8,12 +8,13 @@ export default function TutorialsList() {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(fetchTutorials())
-  }, [])
+  }, [dispatch])
   return (
     <div>
       { tutorials &&
-        tutorials.map((t, i) => (<pre key={i}>{JSON.stringify(t, null, 4)}</pre>
-      ))
+        tutorials.map((t, i) => (
+          <pre style={{textAlign: 'left', paddingLeft: '1.6rem'}} key={i}>{JSON.stringify(t, null, 4)}</pre>
+        ))
       }
     </div>
   );
