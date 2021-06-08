@@ -5,7 +5,6 @@ import { Link, Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import AddTutorial from './components/AddTutorial'
 import Tutorial from './components/Tutorial'
 import TutorialsList from './components/TutorialsList'
-import logo from './logo.svg';
 
 function App() {
   return (
